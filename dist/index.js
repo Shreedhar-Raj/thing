@@ -12,7 +12,7 @@ const generateRoomID_1 = require("./utils/generateRoomID");
 const app = express_1.default();
 const port = process.env.PORT || 3000;
 const httpServer = http_1.createServer(app);
-const io = new socket_io_1.default.Server(httpServer);
+const io = new socketIO.Server(httpServer)
 // const publicDirectoryPath: string = path.join(__dirname, '../public')
 app.use(express_1.default.static('public'));
 // Parse URL-encoded bodies (as sent by HTML forms)
